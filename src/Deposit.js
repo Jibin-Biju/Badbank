@@ -12,7 +12,7 @@ const Deposit = () => {
     }, []);
 
     const getData = async () => {
-        let result = await fetch(`http://localhost:8080/user/get/${sessionStorage.getItem('id')}`);
+        let result = await fetch(`https://badbank-react.herokuapp.com/user/get/${sessionStorage.getItem('id')}`);
         result = await result.json();
         setBalance(result.result.balance);
     }
@@ -21,7 +21,7 @@ const Deposit = () => {
         if (userBalance <= 0) {
             alert("please enter any valid amount");
         } else {
-            let result = await fetch(`http://localhost:8080/user/edit/${sessionStorage.getItem('id')}`, {
+            let result = await fetch(`https://badbank-react.herokuapp.com/user/edit/${sessionStorage.getItem('id')}`, {
                 method: 'put',
                 body: JSON.stringify({
                     "balance": Number(balance) + Number(userBalance) 

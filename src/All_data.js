@@ -10,7 +10,7 @@ const All_data = () => {
     }, []);
 
     const getData = async () => {
-        let result = await fetch(`http://localhost:8080/user/get`);
+        let result = await fetch(`https://badbank-react.herokuapp.com/user/get`);
         result = await result.json();
         setData(result);
     }

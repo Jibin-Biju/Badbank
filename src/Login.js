@@ -17,7 +17,7 @@ const Login = () => {
     const isValid = async () => {
         console.log(email);
         console.log(pass);
-        let result = await fetch('http://localhost:8080/login', {
+        let result = await fetch('https://badbank-react.herokuapp.com/login', {
             method: 'post',
             body: JSON.stringify({
                 "email": email,

@@ -19,7 +19,7 @@ const Signup = () => {
         console.log(email);
         console.log(pass);
         console.log(role);
-        let result = await fetch('http://localhost:8080/signup', {
+        let result = await fetch('https://badbank-react.herokuapp.com/signup', {
             method: 'post',
             body: JSON.stringify({
                 "email": email,

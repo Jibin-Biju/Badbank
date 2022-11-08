@@ -11,7 +11,7 @@ const Balance = () => {
     }, []);
 
     const getData = async () => {
-        let result = await fetch(`http://localhost:8080/user/get/${sessionStorage.getItem('id')}`);
+        let result = await fetch(`https://badbank-react.herokuapp.com/user/get/${sessionStorage.getItem('id')}`);
         result = await result.json();
         setBalance(result.result.balance);
     }
