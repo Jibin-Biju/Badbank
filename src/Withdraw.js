@@ -48,12 +48,12 @@ const Withdraw = () => {
     return (
         <>
             <Navbar />
-            <div class="card text-white bg-success mb-3" style={{ maxWidth: "400px", height: "250px", margin: "auto" }}>
-                <div class="card-header" style={{ textAlign: "center", fontSize: "20px" }}>Withdraw</div>
-                <div class="card-body" style={{ fontSize: "20px" }}>
+            <div className="card text-white bg-success mb-3" style={{ maxWidth: "400px", height: "250px", margin: "auto" }}>
+                <div className="card-header" style={{ textAlign: "center", fontSize: "20px" }}>Withdraw</div>
+                <div className="card-body" style={{ fontSize: "20px" }}>
                     Amount<br />
-                    <input onChange={(e) => setUserBalance(e.target.value)} type="number" class="form-control" id="withdrawAmount" placeholder="Enter amount" /><br />
-                    <button onClick={isWithdraw} type="submit" class="btn" style={{ color: "black", textAlign: "center", fontSize: "20px" }} >Widthdraw</button>
+                    <input onChange={(e) => setUserBalance(e.target.value)} type="number" className="form-control" id="withdrawAmount" placeholder="Enter amount" /><br />
+                    <button onClick={isWithdraw} type="submit" className="btn" style={{ color: "black", textAlign: "center", fontSize: "20px" }} >Widthdraw</button>
                 </div>
             </div>
         </>

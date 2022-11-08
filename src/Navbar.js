@@ -18,28 +18,28 @@ const Navbar = () => {
     }
     return (
         <div id="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <Link class="navbar-brand" to="/Home">BadBank</Link>
-                {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <Link className="navbar-brand" to="/Home">BadBank</Link>
+                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button> */}
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
                         {
                             role == "Customer" ?
                                 <>
-                                    <li class="nav-item">
-                                        <Link class="nav-link" to="/Deposit" id="Deposit">Deposit</Link>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/Deposit" id="Deposit">Deposit</Link>
                                     </li>
-                                    <li class="nav-item" style={{ marginLeft: "10px" }}>
-                                        <Link class="nav-link" to="/Withdraw" id="Withdraw">Withdraw</Link>
+                                    <li className="nav-item" style={{ marginLeft: "10px" }}>
+                                        <Link className="nav-link" to="/Withdraw" id="Withdraw">Withdraw</Link>
                                     </li>
-                                    <li class="nav-item" style={{ marginLeft: "10px" }}>
-                                        <Link class="nav-link" to="/Balance" id="Balance">Balance</Link>
+                                    <li className="nav-item" style={{ marginLeft: "10px" }}>
+                                        <Link className="nav-link" to="/Balance" id="Balance">Balance</Link>
                                     </li>
                                 </> : 
-                                <li class="nav-item">
-                                    <Link class="nav-link" to="/Userdata">User Data</Link>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/Userdata">User Data</Link>
                                 </li>
 
                         }
@@ -49,9 +49,9 @@ const Navbar = () => {
                 <div>
                     <p>username: {username}</p>
                     <p>Role: {sessionStorage.getItem('post')}</p>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <Link onClick={isLogout} class="nav-link" to="/">Logout</Link>
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link onClick={isLogout} className="nav-link" to="/">Logout</Link>
                         </li>
                     </ul>
                 </div>

@@ -44,12 +44,12 @@ const Deposit = () => {
     return (
         <>
             <Navbar />
-            <div class="card text-white bg-warning mb-3" style={{ maxWidth: "400px", height: "250px", margin: "auto" }}>
-                <div class="card-header" style={{ textAlign: "center", fontSize: "20px" }}>Deposit</div>
-                <div class="card-body" style={{ fontSize: "20px" }}>
+            <div className="card text-white bg-warning mb-3" style={{ maxWidth: "400px", height: "250px", margin: "auto" }}>
+                <div className="card-header" style={{ textAlign: "center", fontSize: "20px" }}>Deposit</div>
+                <div className="card-body" style={{ fontSize: "20px" }}>
                     Amount<br />
-                    <input onChange={(e) => setUserBalance(e.target.value)} type="number" class="form-control" id="depositAmount" placeholder="Enter amount" min={1} required /><br />
-                    <button onClick={isDeposit} type="submit" class="btn" style={{ color: "black", textAlign: "center", fontSize: "20px" }}>Deposit</button>
+                    <input onChange={(e) => setUserBalance(e.target.value)} type="number" className="form-control" id="depositAmount" placeholder="Enter amount" min={1} required /><br />
+                    <button onClick={isDeposit} type="submit" className="btn" style={{ color: "black", textAlign: "center", fontSize: "20px" }}>Deposit</button>
                 </div>
             </div>
         </>

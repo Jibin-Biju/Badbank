@@ -18,7 +18,7 @@ const Balance = () => {
     return (
         <>
             <Navbar />
-            <div class="card text-white bg-info mb-3" style={{ maxWidth: "300px", height: "200px", margin: "auto" }}>
+            <div className="card text-white bg-info mb-3" style={{ maxWidth: "300px", height: "200px", margin: "auto" }}>
                 <div style={{fontSize:"20px", textAlign:"center", marginTop:"80px"}}>Balance: {balance}</div>
             </div>
         </>
