@@ -1,0 +1,135 @@
+.login-bg {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Montserrat';
+  line-height: 1.42857143;
+  color: #333;
+  height: 100vh;
+  font-size: 16px;
+  min-height: 100%;
+  font-weight: 500;
+  background: #F7F7F7;
+  margin: auto !important;
+}
+
+#wrap {
+  min-height: 100%;
+
+  height: 100%;
+}
+
+.loginParentContainer {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.subContainer {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.subContainer h2 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  margin: 25px 0px;
+
+}
+
+.subContainer .loginForm {
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 30px;
+}
+
+.subContainer .loginForm label {
+  text-align: left !important;
+  font-weight: 600;
+  color: #495464;
+}
+
+.subContainer .loginForm input.field {
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 45px;
+  border-radius: 5px;
+  color: #20A9B5;
+}
+
+.subContainer .loginForm input.field::placeholder {
+  color: #20A9B5;
+}
+
+.subContainer .loginForm input.field:focus {
+  outline: none;
+}
+
+.inputborder-btm {
+  border-bottom: 1px solid #E1E1E1 !important;
+}
+
+.Loginbtn {
+  background: #20A9B5;
+  height: 45px;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff !important;
+  font-size: 20px;
+
+}
+
+.Loginbtn:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.Loginbtn:hover::after {
+  opacity: 1;
+}
+
+.Loginbtn:hover::after {
+  opacity: 1;
+}
+
+.nav-item{
+  font-size: 20px!important;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
